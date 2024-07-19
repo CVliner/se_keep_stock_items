@@ -1,7 +1,8 @@
 ### Introduction
 
-Stock Forecasting
-This project involves analyzing and forecasting stock remains using data preprocessing and machine learning techniques. The goal is to clean the data, analyze it, and then use different regression models to forecast, which items are best sold and should be kept in warehouse.
+### Stock Forecasting
+
+This project involves analyzing and forecasting stock of real equipment in SE remains using data preprocessing and machine learning techniques. The goal is to clean the data, analyze it, and then use different regression models to forecast, which items are best sold and should be kept in warehouse.
 
 To run this project, you need to have Python installed along with the following libraries:
 pip install pandas numpy requests seaborn matplotlib scikit-learn xgboost plotly
