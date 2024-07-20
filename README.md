@@ -18,5 +18,7 @@ python stock_forecasting.py
 
 
 ### Dataset
+Datas can be found in Stock_forecast.csv. Dataset has been collected according to purchase of SE equipment during whole year in 2018.
 ### Results
 ### Recommendations
+
