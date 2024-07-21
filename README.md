@@ -22,7 +22,8 @@ Datas can be found in Stock_forecast.csv. Dataset has been collected according t
 ### Results
 ### Recommendations
 For further observation and stock remainings prediction, it is recommended to:
-Update the model and improve prediction models.
-Continue data analysis with addition equipment for last 5 years.
-Create list of continously purchased equipment and keep them in warehouse.
+
+- Update the model and improve prediction models.
+- Continue data analysis with addition equipment for last 5 years.
+- Create list of continously purchased equipment and keep them in warehouse.
 
