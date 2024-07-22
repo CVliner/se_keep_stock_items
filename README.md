@@ -1,6 +1,6 @@
 ### Introduction
 
-### Stock Forecasting
+### Stock Forecasting in SE
 
 This project involves analyzing and forecasting stock of real equipment in SE remains using data preprocessing and machine learning techniques. The goal is to clean the data, analyze it, and then use different regression models to forecast, which items are best sold and should be kept in warehouse.
 
@@ -21,9 +21,9 @@ python stock_forecasting.py
 Datas can be found in Stock_forecast.csv. Dataset has been collected according to purchase of SE equipment during whole year in 2018.
 ### Results
 ### Recommendations
-For further observation and stock remainings prediction, it is recommended to:
+For further observation and SE stock remainings prediction, it is recommended to:
 
 - Update the model and improve prediction models.
 - Continue data analysis with addition equipment for last 5 years.
-- Create list of continously purchased equipment and keep them in warehouse.
+- Create list of continously purchased equipment in SE and keep them in warehouse.
 
