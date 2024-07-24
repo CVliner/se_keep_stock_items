@@ -20,12 +20,6 @@ df.head(1)
 # Initial look at the data types
 # df.info()
 
-"""# Data Prep/ Investigation
-
-
-
-"""
-
 # Turns columns to datetime data type
 df["InvoiceDate"] = pd.to_datetime(df["InvoiceDate"])
 
