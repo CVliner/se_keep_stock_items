@@ -38,7 +38,7 @@ df["InvoiceTime"] = df["InvoiceDate"].dt.time
 # convert column from object to string
 df["Description"] = df["Description"].astype(str)
 
-# Storing rows with words found thorught the project that are not product sales
+# Storing rows with words found throw the project that are not product sales
 remove_words = ["Discount", "SAMPLES"]
 
 # Boolean indexing to drop rows containing specific words
@@ -136,7 +136,7 @@ CountryDF = df[["Region", "Quantity", "TotalPrice"]]
 # Grouping all countries to see the biggest buyers with.sum()
 CountryDFgrouped = CountryDF.groupby("Region").sum()
 
-# Top 20 countries based on Quantity
+# Top 5 countries based on Quantity
 CountryDFquantity = CountryDFgrouped.sort_values("Quantity", ascending = False).head(20)
 
 # Bar chart for Quantity on x and country on y axis using Plotly made horizontal
@@ -148,7 +148,7 @@ fig_quantity.update_traces(marker = dict(color = px.colors.sequential.Oranges))
 
 fig_quantity.show()
 
-# top 20 countries based on Total Price
+# top 5 countries based on Total Price
 CountryDFprice = CountryDFgrouped.sort_values("TotalPrice", ascending = False).head(20)
 
 # Bar chart for Total Price on x and country on y axis using Plotly made horizontal
@@ -418,7 +418,7 @@ def ShowMe(date, true, preds):
 
 import plotly.graph_objects as go
 
-# If else codnition for graph with forcasted values ontop of actual
+# If else codnition for graph with forcasted values on top of actual
 if isinstance(model, LinearRegression):
     forecast = model.predict(X_test.drop("forecast", axis=1))
 else:
