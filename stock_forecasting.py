@@ -242,11 +242,10 @@ print(weekend)
 # If row duplicated store here
 Duplicates = df[df.duplicated(keep=False)]
 
-# There were over 10,000 duplicates, if statement
 if len(Duplicates) > 0:
   # Prints the length or count of duplicate rows
   print("Current count of duplicate rows:", len(Duplicates))
-  # Droppin doubles
+  # Drop doubles
   df = df.drop_duplicates()
 # If all duplicates missing or now deleted will show no duplicate found
 else:
@@ -254,8 +253,6 @@ else:
 
 # If there are still duplicated rows
 Duplicates2 = df[df.duplicated(keep=False)]
-
-# There were over 10,000 duplicates, if statement
 if len(Duplicates2) > 0:
   # Prints the length or count of duplicate rows
   print("Total count of duplicate rows after current count:", len(Duplicates2))
