@@ -11,7 +11,7 @@ print("Libraries imported.")
 """Upload data set"""
 
 # Data set upload
-filepath = "/content/Stock_forecast.csv"
+filepath = "/content/Data/Stock_forecast.csv"
 
 # First look at the dataset
 df = pd.read_csv(filepath, encoding = "cp1251") # Encoding as would not open
@@ -79,10 +79,10 @@ else:
     print("No duplicate rows found.")
 
 
-# Droppin doubles
+# Drop doubles
 df = df.drop_duplicates()
 
-# DOne again to check if deleted now
+# To check if deleted now
 Duplicates2 = df[df.duplicated(keep=False)]
 
 # If statement which shows
