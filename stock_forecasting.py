@@ -11,7 +11,7 @@ print("Libraries imported.")
 """Upload data set"""
 
 # Data set upload
-filepath = "/content/Data/Stock_forecast.csv"
+filepath = "/Data/Stock_forecast.csv"
 
 # First look at the dataset
 df = pd.read_csv(filepath, encoding = "cp1251") # Encoding as would not open
@@ -96,10 +96,10 @@ print("End date of data set: ", EndDate)
 
 df.describe()
 
-# Locating outliers throuhg a box plot, on colu,n qunatity by price
+# Locating outliers throuhg a box plot, on column qunatity by price
 df.loc[:, ["Quantity", "TotalPrice"]].boxplot(figsize = (10,10));
 
-# Function with some pre argumetns inside
+# Function with some per arguments inside
 def remove_outliers(data, lower_percentile = 0.25, upper_percentile = 0.75):
   # Defining Q's
     q1 = data.quantile(lower_percentile)
