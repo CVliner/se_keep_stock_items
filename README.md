@@ -7,16 +7,16 @@ This project involves feature engineering, analyzing and forecasting stock of re
 ### Usage
 
 Clone the repository:
+```bash
 git clone https://github.com/CVliner/se_keep_stock_items.git
-
+```
+```bash
 cd stock-forecasting
-
-Place the Data/Stock_forecast.csv dataset in the project directory.
-
-Run the script:
-
+```
+Place the Data/Stock_forecast.csv dataset in the project directory and run the script:
+```bash
 python stock_forecasting.py
-
+```
 
 ### Dataset
 Datas can be found in /Data/Stock_forecast.csv. Dataset has been collected according to purchase of SE equipment during whole year in 2018.
