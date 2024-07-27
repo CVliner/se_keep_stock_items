@@ -13,7 +13,7 @@ git clone https://github.com/CVliner/se_keep_stock_items.git
 ```bash
 cd stock-forecasting
 ```
-Place the Data/Stock_forecast.csv dataset in the project directory and run the script:
+Place the /Data/Stock_forecast.csv dataset in the project directory and run the script:
 ```bash
 python stock_forecasting.py
 ```
