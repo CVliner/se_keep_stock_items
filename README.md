@@ -8,9 +8,13 @@ This project involves feature engineering, analyzing and forecasting stock of re
 
 Clone the repository:
 git clone https://github.com/CVliner/se_keep_stock_items.git
+
 cd stock-forecasting
+
 Place the Data/Stock_forecast.csv dataset in the project directory.
+
 Run the script:
+
 python stock_forecasting.py
 
 
