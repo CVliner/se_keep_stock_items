@@ -135,7 +135,7 @@ CountryDFquantity = CountryDFgrouped.sort_values("Quantity", ascending = False).
 
 # Bar chart for Quantity on x and country on y axis using Plotly made horizontal
 fig_quantity = px.bar(CountryDFquantity, x = "Quantity", y = CountryDFquantity.index,
-                      orientation = "h", labels={"Quantity": "Quantity Sold", "y": "Region"}, title = "Top 20 Countries by Quantity Sold")
+                      orientation = "h", labels={"Quantity": "Quantity Sold", "y": "Region"}, title = "Top 5 Countries by Quantity Sold")
 
 # Adding in colour code for graph
 fig_quantity.update_traces(marker = dict(color = px.colors.sequential.Oranges))
@@ -147,7 +147,7 @@ CountryDFprice = CountryDFgrouped.sort_values("TotalPrice", ascending = False).h
 
 # Bar chart for Total Price on x and country on y axis using Plotly made horizontal
 fig_price = px.bar(CountryDFprice, x = "TotalPrice", y = CountryDFprice.index, orientation="h",
-                   labels={"TotalPrice": "Total Price", "y": "Region"}, title = "Top 20 Countries by Total Price")
+                   labels={"TotalPrice": "Total Price", "y": "Region"}, title = "Top 5 Countries by Total Price")
 
 # Adding in colour code for graph
 fig_price.update_traces(marker = dict(color = px.colors.sequential.Oranges))
@@ -175,7 +175,7 @@ plt.xticks(rotation=90)
 plt.show()
 
 # Sort the products by total sales in ascending order and select the worst 10
-WorstProduct = ProductSummary.sort_values(by="TotalPrice").head(100)
+WorstProduct = ProductSummary.sort_values(by="TotalPrice").head(10)
 
 # Print the worst 10 products
 print("Worst 10 products:")
