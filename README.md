@@ -1,4 +1,4 @@
-### Stock Forecasting in SE
+### Stock Forecasting in SE - Test vers.
 
 This project involves feature engineering, analyzing and forecasting stock of real equipment in SE remains using data preprocessing and machine learning techniques. The goal is to clean the data, analyze it, and then use different regression models to forecast, which items are best sold and should be kept in stock.
 
